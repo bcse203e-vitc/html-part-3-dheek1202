@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>Website Feedback</title>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Website Feedback</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label>Rate the Website:</label>
+      <div class="stars">
+        <label><input type="radio" name="rating" value="1" required> 1★</label>
+        <label><input type="radio" name="rating" value="2"> 2★</label>
+        <label><input type="radio" name="rating" value="3"> 3★</label>
+        <label><input type="radio" name="rating" value="4"> 4★</label>
+        <label><input type="radio" name="rating" value="5"> 5★</label><br><br>
+      </div>
+
+      <label for="feedbackType">Type of Feedback:</label><br>
+      <select id="feedbackType" name="feedbackType" required>
+        <option value="">--Select--</option>
+        <option value="Suggestion">Suggestion</option>
+        <option value="Bug Report">Bug Report</option>
+        <option value="Compliment">Compliment</option><br><br>
+      </select><br><br>
+
+      <label for="feedback">Feedback:</label><br>
+      <textarea id="feedback" name="feedback" rows="3"></textarea><br><br>
+
+
+      <label>Would you recommend us?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="recommend" value="Yes" required> Yes</label><br>
+        <label><input type="radio" name="recommend" value="No"> No</label><br>
+      </div><br>
+
+      <div class="button-group">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
